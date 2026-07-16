@@ -4,125 +4,141 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+  <title>Gaurab - Portfolio</title>
 </head>
 
 <body>
   <header>
-    <img src="images/logo.png" alt="Logo" width="80">
-    <nav>
-      <ul>
-        <li> <a href="0">Home </a> </li>
-        <li> <a href="#about">About </a></li>
-        <li> <a href="#skills">Skills </a></li>
-        <li> <a href="#projects">Projects </a></li>
-        <li> <a href="#contact">Contact </a></li>
-        <form>
-      </ul>
-      <input type="text" placeholder="Search">
-      <button type="submit">Search</button>
+    <div class="header-container">
+      <div class="logo">
+        <img src="images/logo.png" alt="Logo" width="80">
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <form>
+        <input type="text" placeholder="Search">
+        <button type="submit">Search</button>
       </form>
-    </nav>
-    <hr>
+      <hr>
   </header>
 
-  <Main>
+  <main>
     <section id="about">
-      <h1>Gaurab</h1>
-      <p>
-        Hello! I'm Gaurab, a passionate and dedicated developer who loves learning new technologies and improving my
-        skills.
-        I enjoy solving problems, building creative projects, and creating user-friendly websites and applications.
-        I'm committed to continuous learning and always looking for opportunities to grow both personally and
-        professionally.
-        I have a strong interest in web development and enjoy working with HTML, CSS, JavaScript, and other modern
-        technologies to create responsive and interactive websites.
-        Every project I build helps me strengthen my technical skills while encouraging creativity and attention to
-        detail.
-        I believe that success comes through hard work, consistency, and a willingness to learn from every experience.
-
-      </p>
-      <img src="images/gaurab.jpg" alt="gaurab" width="300">
+      <div class="about-container">
+        <div class="about-text">
+          <h1>Gaurab</h1>
+          <p>
+            Hello! I'm Gaurab, a passionate and dedicated developer who loves learning new technologies and improving my
+            skills.
+            I enjoy solving problems, building creative projects, and creating user-friendly websites and applications.
+            I'm committed to continuous learning and always looking for opportunities to grow both personally and
+            professionally.
+            I have a strong interest in web development and enjoy working with HTML, CSS, JavaScript, and other modern
+            technologies to create responsive and interactive websites.
+            Every project I build helps me strengthen my technical skills while encouraging creativity and attention to
+            detail.
+            I believe that success comes through hard work, consistency, and a willingness to learn from every
+            experience.
+          </p>
+        </div>
+        <img src="images/gaurab.jpg" alt="gaurab" width="300">
+      </div>
     </section>
     <hr>
 
     <section id="skills">
-      <h1> My Skills </h1>
-      <dl>
-        <dt>Programming languages</dt>
-        <dd>Java, python, c# </dd>
+      <div class="skills-container">
+        <h1 class="skills-heading">My Skills</h1>
+        <div class="skills-grid">
+          <div class="skills-card">
+            <dt>Programming Languages</dt>
+            <dd>Java,Python,C+,J5</dd>
+          </div>
 
-        <dt> Frameworks </dt>
-        <dd>django, asp.dotnet, angular, blazor </dd>
+          <div class="skills-card">
+            <dt>Frameworks</dt>
+            <dd>Django</dd>
+          </div>
 
-        <dt> Database </dt>
-        <dd> Mysql, mongodb, oracle </dd>
+          <div class="skills-card">
+            <dt>Databases</dt>
+            <dd>MySQL,PostgreSQL,Oracle</dd>
+          </div>
 
-        <dt> Tools </dt>
-        <dd> Adobe, photoshop, Figma </dd>
-      </dl>
+          <div class="skills-card">
+            <dt>Tools</dt>
+            <dd>Adobe Photoshop, Figma</dd>
+          </div>
+
+
+        </div>
     </section>
-    <!.. this is skills section ..>
-      <hr>
+    <hr>
 
-      <section id="projects">
+
+    <section id="projects">
+      <div class="projects-container">
         <h1>My Projects</h1>
         <article>
           <h3>Object Detection System</h3>
-          <p>I have created a aplication taht correctly detect multiple objects. </p>
-          <p> <a href="https://github.com/gaurabkhatri1/html-project.git" target="_blank">Click here to view Project</a>
+          <p>I have created an application that correctly detects multiple objects.</p>
+          <p><a href="https://github.com/gaurabkhatri1/html-project.git" target="_blank">Click here to view Project</a>
           </p>
         </article>
 
         <article>
           <h3>Learning Management System</h3>
-          <p> A web application for managing and delivering online couses. </p>
-          <p> <a href="https://github.com/gaurabkhatri1/html-project.git" target="_blank">Click here to view Project</a>
+          <p>A web application for managing and delivering online courses.</p>
+          <p><a href="https://github.com/gaurabkhatri1/html-project.git" target="_blank">Click here to view Project</a>
           </p>
         </article>
 
         <article>
           <h3>Learning Management System</h3>
-          <p> A web application for managing and delivering online couses. </p>
-          <p> <a href="https://github.com/gaurabkhatri1/html-project.git" target="_blank">Click here to view Project</a>
+          <p>A web application for managing and delivering online courses.</p>
+          <p><a href="https://github.com/gaurabkhatri1/html-project.git" target="_blank">Click here to view Project</a>
           </p>
         </article>
+      </div>
+    </section>
+    <hr>
 
-        <section id="contact">
-          <h1> Contact </h1>
-          <form>
-            <label> Full Name</label><br>
-            <input type="text"><br>
+    <section id="contact">
+      <div class="contact-container">
+        <h1>Contact</h1>
+        <form>
+          <label>Full Name</label><br>
+          <input type="text"><br>
 
-            <label> Your Email</label><br>
-            <input type="Email"><br>
+          <label>Your Email</label><br>
+          <input type="email"><br>
 
-            <label> Message</label><br>
-            <textarea></textarea><br>
-            <button type="submit">submit</button>
+          <label>Message</label><br>
+          <textarea></textarea><br>
 
+          <button type="submit">Submit</button>
+          <br>
+        </form>
+        <div class="social-links">
+          <img src="images/gmail.jpg" alt="Gmail Logo" width="40">
+          <img src="images/Whatsapp_logo.jpg" alt="WhatsApp Logo" width="40">
+          <img src="images/linkedin.avif" alt="LinkedIn Logo" width="40">
+        </div>
+      </div>
+    </section>
+  </main>
 
-          </form>
-
-
-
-
-
-        </section>
-        <hr>
-        <img src="images/gmail.jpg" alt="Logo" width="50">
-        <img src="images/Whatsapp_logo.jpg" alt="Logo" width="40">
-        <img src="images/linkedin.avif" alt="Logo" width="40">
-
-
-
-
-
-
-  </Main>
-  <Footer>
+  <footer>
     <p>&copy; 2026 Gaurab Khatri. All rights reserved.</p>
-  </Footer>
+  </footer>
 </body>
 
 </html>

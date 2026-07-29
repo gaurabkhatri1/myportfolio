@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Correct CSS Path -->
   <link rel="stylesheet" href="css/style.css">
   <title>Gaurab - Portfolio</title>
 </head>
@@ -11,23 +12,26 @@
 <body>
   <header>
     <div class="header-container">
-      <div class="logo">
-        <img src="images/logo.png" alt="Logo" width="80">
+      <div class="left-header">
+        <div class="logo">
+          <img src="images/logo.png" alt="Logo" width="80">
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
       </div>
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-      <form>
-        <input type="text" placeholder="Search">
+
+      <form class="search-form" onsubmit="event.preventDefault();">
+        <input type="text" placeholder="Search" aria-label="Search">
         <button type="submit">Search</button>
       </form>
-      <hr>
+    </div>
   </header>
 
   <main>
@@ -43,102 +47,117 @@
             professionally.
             I have a strong interest in web development and enjoy working with HTML, CSS, JavaScript, and other modern
             technologies to create responsive and interactive websites.
-            Every project I build helps me strengthen my technical skills while encouraging creativity and attention to
-            detail.
-            I believe that success comes through hard work, consistency, and a willingness to learn from every
-            experience.
           </p>
         </div>
-        <img src="images/gaurab.jpg" alt="gaurab" width="300">
+        <img src="images/gaurab.jpg" alt="Gaurab's profile picture" width="250">
       </div>
     </section>
-    <hr>
 
     <section id="skills">
       <div class="skills-container">
-        <h1 class="skills-heading">My Skills</h1>
+        <h1>My Skills</h1>
         <div class="skills-grid">
           <div class="skills-card">
-            <dt>Programming Languages</dt>
-            <dd>Java,Python,C+,J5</dd>
+            <h3>Programming Languages</h3>
+            <p>Java, Python, C++, JS</p>
           </div>
-
           <div class="skills-card">
-            <dt>Frameworks</dt>
-            <dd>Django</dd>
+            <h3>Frameworks</h3>
+            <p>Django</p>
           </div>
-
           <div class="skills-card">
-            <dt>Databases</dt>
-            <dd>MySQL,PostgreSQL,Oracle</dd>
+            <h3>Databases</h3>
+            <p>MySQL, PostgreSQL, Oracle</p>
           </div>
-
           <div class="skills-card">
-            <dt>Tools</dt>
-            <dd>Adobe Photoshop, Figma</dd>
+            <h3>Tools</h3>
+            <p>Adobe Photoshop, Figma</p>
           </div>
-
-
         </div>
+      </div>
     </section>
-    <hr>
-
 
     <section id="projects">
       <div class="projects-container">
         <h1>My Projects</h1>
-        <article>
-          <h3>Object Detection System</h3>
-          <p>I have created an application that correctly detects multiple objects.</p>
-          <p><a href="https://github.com/gaurabkhatri1/html-project.git" target="_blank">Click here to view Project</a>
-          </p>
-        </article>
 
-        <article>
-          <h3>Learning Management System</h3>
-          <p>A web application for managing and delivering online courses.</p>
-          <p><a href="https://github.com/gaurabkhatri1/html-project.git" target="_blank">Click here to view Project</a>
-          </p>
-        </article>
+        <!-- Modular Vanilla JS Slider -->
+        <div class="slider" id="slider">
+          <div class="slider-container">
+            <div class="slider-track">
+              <div class="slide"><img src="images/img1.jpg" alt="Web Design Showcase 1"></div>
+              <div class="slide"><img src="images/img2.jpg" alt="Website Strategy Showcase 2"></div>
+              <div class="slide"><img src="images/img3.jpg" alt="Interactive Web Showcase 3"></div>
+              <div class="slide"><img src="images/img4.jpg" alt="Design Thinking Showcase 4"></div>
+            </div>
 
-        <article>
-          <h3>Learning Management System</h3>
-          <p>A web application for managing and delivering online courses.</p>
-          <p><a href="https://github.com/gaurabkhatri1/html-project.git" target="_blank">Click here to view Project</a>
-          </p>
-        </article>
+            <button class="slider-btn prev" aria-label="Previous Slide">&#10094;</button>
+            <button class="slider-btn next" aria-label="Next Slide">&#10095;</button>
+          </div>
+
+          <div class="slider-dots"></div>
+        </div>
+
+        <div class="projects-list">
+          <article>
+            <h3>Object Detection System</h3>
+            <p>I have created an application that correctly detects multiple objects.</p>
+            <p><a href="https://github.com/gaurabkhatri1/html-project.git" target="_blank"
+                rel="noopener noreferrer">Click here to view Project</a></p>
+          </article>
+
+          <article>
+            <h3>Learning Management System</h3>
+            <p>A web application for managing and delivering online courses.</p>
+            <p><a href="https://github.com/gaurabkhatri1/html-project.git" target="_blank"
+                rel="noopener noreferrer">Click here to view Project</a></p>
+          </article>
+
+          <article>
+            <h3>E-Commerce Platform</h3>
+            <p>A fully functional online store with secure checkout capabilities.</p>
+            <p><a href="https://github.com/gaurabkhatri1/html-project.git" target="_blank"
+                rel="noopener noreferrer">Click here to view Project</a></p>
+          </article>
+        </div>
+
       </div>
     </section>
-    <hr>
 
     <section id="contact">
       <div class="contact-container">
         <h1>Contact</h1>
-        <form>
-          <label>Full Name</label><br>
-          <input type="text"><br>
+        <form class="contact-form" onsubmit="event.preventDefault();">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" required>
 
-          <label>Your Email</label><br>
-          <input type="email"><br>
+          <label for="email">Your Email</label>
+          <input type="email" id="email" name="email" required>
 
-          <label>Message</label><br>
-          <textarea></textarea><br>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required></textarea>
 
           <button type="submit">Submit</button>
-          <br>
         </form>
+
         <div class="social-links">
-          <img src="images/gmail.jpg" alt="Gmail Logo" width="40">
-          <img src="images/Whatsapp_logo.jpg" alt="WhatsApp Logo" width="40">
-          <img src="images/linkedin.avif" alt="LinkedIn Logo" width="40">
+          <a href="mailto:your-email@gmail.com"><img src="images/gmail.jpg" alt="Gmail" width="40"></a>
+          <a href="#"><img src="images/Whatsapp_logo.jpg" alt="WhatsApp" width="40"></a>
+          <a href="#"><img src="images/linkedin.avif" alt="LinkedIn" width="40"></a>
+          <a href="#"><img src="images/instagram.jpg" alt="Instagram" width="40"></a>
         </div>
       </div>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2026 Gaurab Khatri. All rights reserved.</p>
+    <div class="footer-container">
+      <p>&copy; 2026 Gaurab Khatri. All rights reserved.</p>
+    </div>
   </footer>
+
+  <!-- Correct JS Path -->
+  <script src="js/slider.js"></script>
 </body>
 
 </html>
